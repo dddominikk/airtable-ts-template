@@ -1,0 +1,66 @@
+:root {
+  --as-pink: #ff2278;
+  --as-turquoise: #31bcda;
+  --as-blue: #2977c9;
+  --as-blue-gray: #283e62;
+  --as-white: #ffffff;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+input {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  width: 300px;
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+}
+
+.suggestions {
+  border: 1px solid var(--as-blue-gray);
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 30vh;
+  overflow-y: scroll;
+  padding-left: 0;
+  width: 100vw;
+  overscroll-behavior-block: contain;
+}
+
+.suggestions li {
+  height: 5vh;
+  padding: 0.5rem;
+  overscroll-behavior-inline: auto;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: var(--as-pink);
+  color: var(--as-white);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
+
+#SelectButtons {
+  background: var(--as-pink);
+}
+
+#SelectButtonsNavbar {
+  color: var(--as-pink);
+  background: var(--as-pink);
+
+}
+
+SelectButtons.SelectButtonsNavbar {
+  background: var(--as-pink);
+}
